@@ -1,0 +1,204 @@
+body{
+    margin: 0;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 30px;
+    background: #EADBC0;
+}
+/* === nav section === */
+
+.nav-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo{
+    color: #A8281C;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Bricolage Grotesque', 'Arial Black', sans-serif;
+}
+
+.nav-links{
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.nav-links:hover {
+    color: #A8281C;
+}
+
+
+/* === main section === */
+
+.main{
+    margin-top: 100px;
+    
+    .p-1{
+        color: #3F6A3B;
+        font-size: 15px;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+    h1{
+        color: #2B1A12;
+        font-size: 70px;
+        font-weight: bold;
+        font-family: sans-serif;
+        line-height: 1;
+        margin-top: 0;
+    }
+    .p-2{
+        font-size: 23px;
+        color: #5C4436;
+    }
+    .buttons{
+        display: flex;
+        gap: 20px;
+    }
+    .button-1{
+        font-size: 16px;
+        color: white;
+        background-color: #A8281C;
+        padding: 22px;
+        border: 0;
+        border-radius: 45px;
+        transition: 1s;
+    }
+    .button-1:hover{
+        background-color: #7E1C13;
+    }
+    .button-2{
+        font-size: 16px;
+        background-color: #EADBC0;
+        padding: 22px;
+        border: 2px solid #5C4436;
+        border-radius: 45px;
+        transition: 1s;
+    }
+    .button-2:hover{
+        color: white;
+        background-color: #5C4436;
+    }
+
+}
+
+/* === menu === */
+
+h3{
+    font-size: 35px;
+}
+
+.menu-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card{
+    background-color: #F7EEDD;
+    margin-bottom: 100px;
+    border-radius: 30px;
+    transition: 1s;
+    
+    .card-img{
+        background-image: url(IMG-20260908-WA0000.jpg);
+        height: 150px;
+        max-width: 100%;
+        position: relative;
+        border-radius: 30px;
+    }
+    .card-img-2{
+        background-image: url(IMG-20260908-WA0001.jpg);
+        height: 150px;
+        max-width: 100%;
+        position: relative;
+        border-radius: 30px;
+    }
+    .card-price{
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        background-color: #D38B2C;
+        padding: 15px;
+        border-radius: 30px;
+        transition-property: all;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in 0.5s;
+    }
+    .card-details{
+        padding: 12px;
+        h4{ font-size: 23px; margin-left: 60px; }
+        .card-details-p{ color: #D38B2C;}
+    }
+    .card-btn{
+        padding-left: 70px;
+        padding-right: 70px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-left: 10px;
+        font-size: 15px;
+        background-color: #3F6A3B;
+        color: #EADBC0;
+        border: 0;
+        border-radius: 20px;
+        cursor: pointer;
+        opacity: 0;
+        transition: 0.5s;
+        transition-delay: 0.1s;
+    }
+    
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+.card:hover .card-btn{
+    opacity: 1;
+}
+
+
+.call-to-order{
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+    background-color: #2B1A12;
+    padding: 25px 40px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    transition: 1s;
+    h3{
+        font-size: 40px;
+        color: #F7EEDD;
+        margin-bottom: 0;
+    }
+    .call-to-order-p{
+        font-size: 18px;
+        color: #EADBC0;
+        margin-top: 0;
+        
+    }
+    .call-to-order-btn{
+        background-color: #D38B2C;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding-left: 25px;
+        padding-right: 25px;
+        border: 0;
+        border-radius: 40px;
+        font-size: 20px;
+        font-weight: bold;
+        transition: 1s;
+    }
+}
+
+.footer{
+    text-align: center;
+    padding: 18px;
+    font-size: 15px;
+    color: #5C4436;
+    border-top: 1px solid #5C4436;
+    margin-top: 70px;
+    float: none;
+}
